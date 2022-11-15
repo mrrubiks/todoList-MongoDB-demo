@@ -1,0 +1,17 @@
+<%- include("header") -%> 
+    <div class="box" id="heading">
+      <h1>All lists</h1>
+    </div>
+
+    <div class="box" id="list">
+      <% for(var list of listOfLists){ %>
+        <div class="item">
+          <a href="./<%=list.name%>"><%=list.realName%></a>
+        </div>
+      </form>
+      <% } %>
+      <div class="item">
+        <a href="../">Home</a>
+      </div>
+    </div>
+<%- include("footer") -%> 
